@@ -13,7 +13,7 @@ from pathlib import Path
 def get_venv_python():
     """Get the virtual environment Python executable"""
     skill_dir = Path(__file__).parent.parent
-    venv_dir = skill_dir / ".venv"
+    venv_dir = Path("C:/Users/tnaka/.gemini/antigravity/brain/32f4cb0c-3a6a-4936-b876-ddaeb6718a14/notebooklm_venv")
 
     if os.name == 'nt':  # Windows
         venv_python = venv_dir / "Scripts" / "python.exe"
@@ -26,7 +26,7 @@ def get_venv_python():
 def ensure_venv():
     """Ensure virtual environment exists"""
     skill_dir = Path(__file__).parent.parent
-    venv_dir = skill_dir / ".venv"
+    venv_dir = Path("C:/Users/tnaka/.gemini/antigravity/brain/32f4cb0c-3a6a-4936-b876-ddaeb6718a14/notebooklm_venv")
     setup_script = skill_dir / "scripts" / "setup_environment.py"
 
     # Check if venv exists

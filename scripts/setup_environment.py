@@ -17,7 +17,7 @@ class SkillEnvironment:
     def __init__(self):
         # Skill directory paths
         self.skill_dir = Path(__file__).parent.parent
-        self.venv_dir = self.skill_dir / ".venv"
+        self.venv_dir = Path("C:/Users/tnaka/.gemini/antigravity/brain/32f4cb0c-3a6a-4936-b876-ddaeb6718a14/notebooklm_venv")
         self.requirements_file = self.skill_dir / "requirements.txt"
 
         # Python executable in venv
